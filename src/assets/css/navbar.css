@@ -1,0 +1,40 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+    color: aliceblue;
+}
+.logo > a > h1 {
+    cursor: pointer;
+    font-size: 2em;
+}
+form {
+    border: 2px solid aliceblue;
+    border-radius: 1em;
+    padding-left: 1em;
+}
+form > input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+form > input::placeholder { 
+    color: aliceblue; 
+}
+form > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 0 0.5em 0.5em 0;
+    cursor: pointer;
+    border: none;
+}
+@media screen and (max-width:678px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+}
